@@ -25,7 +25,7 @@ update_certs() {
         if [[ $(lc "${!test_certificate_varname:-}") == true ]]; then
             acme_server="https://acme-staging.api.letsencrypt.org/directory"
         else
-            acme_server="https://acme-v01.api.letsencrypt.org/directory"
+            acme_server="https://acme-v02.api.letsencrypt.org/directory"
         fi
         
         sleep 30
